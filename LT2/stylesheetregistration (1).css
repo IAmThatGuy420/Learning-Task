@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		width: 100%;
+		background: black;
+}
+.form-box {
+	position: relative;
+	width: 600px;
+	height: 1200px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+h1 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	margin-top: 6px;
+}
+.h1 ion-icon{
+	position: absolute;
+	right: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	top: 20px;
+}
+h2 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	
+}
+.inputbox{
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+	border-bottom: 2px solid #fff;
+}
+.inputbox label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: .5s;
+}
+input:focus ~ label,
+input:focus ~ :valid{
+ top: -5px;
+}
+.inputbox input{
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0 35px 0 5px;
+	color: #fff;
+}
+.inputbox ion-icon{
+	position: absolute;
+	right: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	top: 20px;
+}
+.birthday {
+	margin: -15px 0 15px;
+	font-size: .9em;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+}
+.birthday label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: .5s;
+}
+birthday:focus ~ label,
+birthday:focus ~ :valid{
+ top: -5px;
+}
+.birthday label input {
+		margin-right: 3px;
+}
+.birthday label a{
+	color: #fff;
+	text-decoration: none;
+}
+.forget label a:hover {
+	text-decoration: underline;
+}
+.phone {
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+	border-bottom: 2px solid #fff;
+}
+.phone label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1em;
+	pointer-events: none;
+	transition: .5s;
+}
+input:focus ~ label,
+input:focus ~ :valid{
+ top: -5px;
+}
+.phone input{
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0 35px 0 5px;
+	color: #fff;
+}
+.phone ion-icon{
+	position: absolute;
+	right: 8px;
+	color: #fff;
+	font-size: 1.2em;
+	top: 20px;
+}
+button {
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	background: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+}
+.register {
+	font-size: .9em;
+	color: #fff;
+	text-align: center;
+	margin: 25px 0 10px;
+}
+.register p a{
+	text-decoration: none;
+	color: #fff;
+}
+.register p a:hover{
+	text-decoration: underline;
+}
+.night {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: rotateZ(45deg);
+	
+}
+.shooting_star {
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	height: 2px;
+	background: linear-gradient (-45deg, #5f91ff, rgba (0, 0, 255, 0,));
+	border-radius: 999px;
+	filter: drop-shadow (0 0 6px #699bff;);
+	animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+.shooting_star: :before,
+.shooting_star: :after{
+	content:'';
+	position: absolute;
+	top:calc(50% - 1px);
+	right:0;
+	background: linear-gradient(-45deg, rgba(0,0,255,0),#5f91ff, rgba(0,0,255,0));
+	transform:translateX(50%) rotateZ(45deg);
+	border-radius: 100%;
+	animation: shining 3000ms ease-in-out infinite;
+}
+.shooting_star: :after{
+	transform:translateX(50%) rotateZ(-45deg);
+}
